@@ -3,8 +3,7 @@ from subprocess import Popen, PIPE
 import requests
 import webbrowser
 
-# We are going to write code to read and run python
-# file, and store its output or error.
+# We are going to write code to read and run python file, and store its output or error.
 def execute_return(cmd):
 	args = cmd.split()
 	proc = Popen(args, stdout=PIPE, stderr=PIPE)
