@@ -10,8 +10,7 @@ def execute_return(cmd):
 	out, err = proc.communicate()
 	return out, err
 
-# This function will make an HTTP request using StackOverflow
-# API and the error we get from the 1st function and finally
+# This function will make an HTTP request using StackOverflow API and the error we get from the 1st function and finally
 # returns the JSON file.
 def mak_req(error):
 	resp = requests.get("https://api.stackexchange.com/" +
